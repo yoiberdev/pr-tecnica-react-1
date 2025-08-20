@@ -14,7 +14,7 @@
 }
 
 /* sin boton */
-.button-none {
+button-none {
 	border: none;
 	background: none;
 	cursor: pointer;
@@ -24,73 +24,3 @@
 	}
 }
 
-/* Animaciones personalizadas */
-@keyframes slideInRight {
-  0% {
-    transform: translateX(100px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-@keyframes expandWidth {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 5rem;
-  }
-}
-
-@keyframes fadeInUp {
-  0% {
-    transform: translateY(30px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-.animate-slideInRight {
-  animation: slideInRight 0.7s ease-out forwards;
-}
-
-.animate-expandWidth {
-  animation: expandWidth 0.8s ease-out forwards;
-}
-
-.animate-fadeInUp {
-  animation: fadeInUp 0.6s ease-out forwards;
-}
-
-/* Mejoras visuales para el slider */
-.slider-container {
-  perspective: 1000px;
-}
-
-.slider-item {
-  transform-style: preserve-3d;
-  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.slider-item:hover {
-  transform: translateZ(10px);
-}
-
-/* Efectos de glassmorphism para los botones */
-.glass-button {
-  backdrop-filter: blur(10px);
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-}
-
-.glass-button:hover {
-  background: rgba(255, 255, 255, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
